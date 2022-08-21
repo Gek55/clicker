@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
+    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
     <script>
+      vkBridge.send("VKWebAppInit");
       function aler() {
-        alert("hello");
+        bridge.send("VKWebAppGetUserInfo");
       }
     </script>
     <script>
