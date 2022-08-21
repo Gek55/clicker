@@ -8,16 +8,6 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
-    //<script>
-      function info() 
-      {
-            vkBridge.send("VKWebAppInit");
-            vkBridge.send('VKWebAppGetUserInfo').then(_info =>{
-                console.log(_info, "yes");
-          
-            });
-      }
-    </script>//
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Новая папка.json", {onProgress: UnityProgress});
     </script>
