@@ -11,10 +11,11 @@
     <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
     <script>
       vkBridge.send("VKWebAppInit", {});
-      console.log("1");
+      
       function aler() {
-        vkBridge.send("VKWebAppGetUserInfo");
-        console.log("2");
+        vkBridge.send('VKWebAppGetUserInfo').then(_info =>{
+          console.log(_info);
+        });
       }
     </script>
     <script>
